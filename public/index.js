@@ -1,4 +1,4 @@
-<html>
+
 <body>
 
     <script>
@@ -7,8 +7,7 @@
     let numPerDay = 2;
     let totalRequired = (numPerDay*365)*(maxAge-age);
 
-    document.write (`You will need ${totalRequired} to last you until the ripe age of ${maxAge}`);
+    document.write(`You will need, ${totalRequired} to last you until the ripe age of ${maxAge}`);
     </script>
 
 </body>
-</html>
