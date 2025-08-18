@@ -1,0 +1,31 @@
+
+<body>
+    <h1>Eating snacks makes you happy!</h1>
+    <label>How old are you rn?
+        <input id ="age" />
+    </label> </br/>
+
+    <label>What is your max age?
+        <input id="maxAge" />
+    </label> </br/>
+
+    <label>How many snacks?
+        <input id="numPerDay" />
+    </label> </br/>
+
+    <button onclick="checkInput()" > Accept Input </button> </p>
+<p>Result :
+    <span id="resultHere"></span>
+</p>
+
+<script>
+    function checkInput(){
+        let age = document.getElementById("age").value;
+        let maxAge = document.getElementById("maxAge").value;
+        let numPerDay = document.getElementById("numPerDay").value;
+        let resultHere = (Number(numPerDay)*365)*(Number(maxAge) - (Number(age)));
+        document.getElementById("resultHere").innerHTML = `<b> You will need ${resultHere} to last you until the ripe age of ${maxAge} </b>`;
+    }
+</script>
+
+</body>
